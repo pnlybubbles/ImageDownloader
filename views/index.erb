@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Image Downloader</title>
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"> -->
+  <meta name="description" content="linear-least-squares-method">
+  <meta name="author" content="pnlybubbles">
+  <script type="text/javascript" charset="utf-8" src="/js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/js/nprogress.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/js/index.js"></script>
+  <script type="text/javascript" charset="utf-8" src="/js/main.js"></script>
+  <link rel="stylesheet" href="/css/nprogress.css"/>
+  <link rel="stylesheet" href="/css/index.css"/>
+</head>
+<body>
+  <div class="main">
+    <div class="title">連番画像ダウンロード</div>
+    <div class="field_container">
+      <div class="input_field wrapper">
+        <input type="text" class="url_field" placeholder="URLを入力してください">
+        <input type="submit" class="send_button button" onclick="send()" value="実行" />
+      </div>
+      <div class="progress_field wrapper">
+        <div class="progress_title subtitle"></div>
+      </div>
+      <div class="download_field wrapper">
+        <div class="download_title subtitle"></div>
+        <a class="download_button button">ダウンロード</a>
+      </div>
+      <div class="error_field wrapper">
+        <div class="error_title subtitle"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="text-center">©2014 pnlybubbles</div>
+  </div>
+</body>
+</html>
