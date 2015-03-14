@@ -92,6 +92,7 @@ class Worker < Sinatra::Base
       rescue Exception => e
         out << "event:fail\n"
         out << "data:#{e}\n\n"
+        out << "data:#{e.backtrace.join("\n")}\n\n"
         out << "event:close\n"
         out << "data:none\n\n"
       end
